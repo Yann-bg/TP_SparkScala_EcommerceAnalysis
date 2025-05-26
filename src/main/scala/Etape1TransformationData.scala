@@ -47,7 +47,7 @@ object Etape1TransformationData {
       .option("header", "true")
       .option("delimiter", ",")
       .mode("overwrite")
-      .csv("Ecommerce/ecommerce_transformed.csv")
+      .csv("Ecommerce/ecommerce_transformed")
 
     spark.stop()
   }

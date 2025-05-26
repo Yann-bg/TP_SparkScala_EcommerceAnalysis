@@ -18,7 +18,7 @@ object Etape3Visualizations {
       .option("header", "true")
       .option("inferSchema", "true")
       .option("encoding", "UTF-8")
-      .csv("C:/Users/33758/Desktop/YANN/EcommerceAnalysis/Ecommerce/ecommerce_transformed.csv/part-00000-dee53d17-db95-4c92-b4bf-0e43cacf7254-c000.csv")
+      .csv("Ecommerce/ecommerce_transformed")
 
     val metrics = prepareMetrics(df)
 

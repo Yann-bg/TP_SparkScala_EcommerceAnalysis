@@ -1,3 +1,4 @@
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
@@ -8,8 +9,9 @@ object Etape2Analyse {
       .master("local[*]")
       .getOrCreate()
 
+    import spark.implicits._
 
-    val filePath = "Ecommerce/ecommerce_transformed.csv"
+    val filePath = "Ecommerce/ecommerce_transformed"
 
     val transformedDF = spark.read
       .option("header", "true")
